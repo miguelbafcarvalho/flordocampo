@@ -1,0 +1,261 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* SEÇÃO: SOBRE */
+.sobre {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #EFE6D6;
+  max-height: 546px;
+}
+
+.sobre img {
+  height: 536px;
+}
+
+.sobretext h2 {
+  color: #50371A;
+  font-weight: lighter;
+  font-size: 60px;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sobretext p {
+  color: #50371A;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 35px;
+  max-width: 70%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* SEÇÃO: PRODUTOS */
+.produtos {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.produtos h1 {
+  color: #67734D;
+  font-weight: 100;
+  font-size: 100px;
+  white-space: nowrap;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* SEÇÃO: VELAS */
+.velas {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  gap: 250px;
+  padding: 10px;
+  max-height: 576px;
+  margin-top: 0px;
+}
+
+.velas img {
+  text-align: right;
+  height: 536px;
+}
+
+.velastext h2 {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 60px;
+  white-space: nowrap;
+  margin-top: 50px;
+  margin-left: 95px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.velastext p {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 110px;
+  max-width: 750px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.botaovela {
+  margin-top: 20px;
+  margin-left: 65px;
+  text-align: center;
+}
+
+/* BOTÃO ELEGANTE (Uiverse.io por iZOXVL) */
+.boton-elegante {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #202418;
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+/* SEÇÃO: ÓLEOS */
+.oil {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  gap: 250px;
+  padding: 10px;
+  max-height: 556px;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+
+.oil h2 {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 60px;
+  white-space: nowrap;
+  margin-top: 50px;
+  margin-left: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.oil p {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: 10px;
+  max-width: 750px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* SEÇÃO: SABONETES */
+.soap {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  gap: 280px;
+  padding: 10px;
+  max-height: 556px;
+  margin-top: 0px;
+  margin-right: 100px;
+  height: 536px;
+}
+
+.soap img {
+  margin-top: 25px;
+  height: 425px;
+}
+
+.soap h2 {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 60px;
+  white-space: nowrap;
+  margin-top: 50px;
+  margin-left: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.soap p {
+  color: #67734D;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: 10px;
+  max-width: 750px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.soaptext {
+  margin-left: 60px;
+}
+
+/*rodape*/
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(231, 231, 231);
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 35px;
+  line-height: 50 px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .produto {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .produto img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .produto .produto-descricao {
+    width: 100%;
+  }
+
+  .produto .produto-descricao p {
+    font-size: 4.5vw;
+    margin-bottom: 10px;
+  }
+
+  .produto .comprar {
+    font-size: 4vw;
+    padding: 12px 24px;
+  }
+
+  /* Se tiver seções alternando lado da imagem */
+  .produto:nth-child(even) {
+    flex-direction: column !important;
+  }
+}
+
